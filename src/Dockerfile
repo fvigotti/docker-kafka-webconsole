@@ -4,12 +4,12 @@ MAINTAINER fvigotti
 
 RUN \
   cd / && \
-  wget -q http://downloads.typesafe.com/play/2.4.0/play-2.4.0.zip && \
-  unzip play-2.4.0.zip && \
-  rm -f play-2.4.0.zip && \
+  wget -q http://downloads.typesafe.com/play/2.2.6/play-2.2.6.zip && \
+  unzip play-2.2.6.zip && \
+  rm -f play-2.2.6.zip && \
   git clone https://github.com/kecaps/kafka-web-console.git && \
   cd /kafka-web-console && \
-  /play-2.4.0/play clean compile stage
+  /play-2.2.6/play clean compile stage
 
 
 
