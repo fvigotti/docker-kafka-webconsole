@@ -1,4 +1,5 @@
-FROM dockerfile/java:oracle-java7
+FROM fvigotti/docker-fatjdk8
+
 MAINTAINER fvigotti
 
 RUN \
