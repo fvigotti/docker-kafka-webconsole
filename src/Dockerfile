@@ -14,5 +14,5 @@ RUN \
 
 
 EXPOSE 9000
-
+# todo, remove pid-file before restart or after a crash the app cannot restart correctly
 CMD exec /kafka-web-console/target/universal/stage/bin/kafka-web-console -Duser.dir=/data -DapplyEvolutions.default=true
